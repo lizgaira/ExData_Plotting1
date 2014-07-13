@@ -11,7 +11,7 @@ dat$datetime2<-strptime(datetime, "%Y-%m-%d %H:%M:%S")
 attach(dat)
 sapply(dat, class)
 #Sys.setlocale("LC_TIME", "English")
-
+par(bg="white")
 plot(datetime2, Sub_metering_1, type="l", ylab="Energy sub metering", xlab="")
 lines(datetime2,Sub_metering_2,col="red")
 lines(datetime2,Sub_metering_3,col="blue")

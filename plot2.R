@@ -11,7 +11,7 @@ dat$datetime2<-strptime(datetime, "%Y-%m-%d %H:%M:%S")
 attach(dat)
 sapply(dat, class)
 Sys.setlocale("LC_TIME", "English")
-
+par(bg="white")
 plot(datetime2, Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 dev.copy(png, file="plot2.png")
 dev.off()
